@@ -5,14 +5,14 @@ import { redirect } from 'next/navigation';
 import { caller } from '@/trpc/server';
 
 const Page = async () => {
-  const data = await caller.hello({text: "Antonio Server"});
+  // const data = await caller.hello({text: "Antonio Server"});
   const session = await auth.api.getSession({
     headers: await headers(),
   });
   if (!session){
     redirect("/sign-in");
   }
-  return <p>{data.greeting}</p>
+  // return <p>{data.greeting}</p>
   return <HomeView />;
 }
 export default Page;
