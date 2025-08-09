@@ -21,6 +21,9 @@ const Page = async () => {
   // The fiest component that will be loaded will be the page component in agents page it will get the hydrate
   // through hydration boundry then the react query the react query and the tanstack react query cache
   // noe go to agents view
+
+  // we already have the native next js boundry of error why used a file and class because only for component error
+  // next ja entire page error 
   
 
   )

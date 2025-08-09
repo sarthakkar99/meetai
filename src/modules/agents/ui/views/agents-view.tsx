@@ -19,7 +19,10 @@ export const AgentsView = () => {
 
     // when we useQuery we dont have the data defined but when we have the useSuspenseQuery we already have resolve the date
     // because use Suspense query fetch the data inside of it therefore remove isLoading and 
-
+    // use suspense query very fast if you want to use the above in the parent component we are getting the proper 
+    // xrefeteching and the proper boundry
+    // we pass null there seems to be an issue with protected routes this will happen when you pass stringify null in 
+    // in use suspense query it changes to query
 }
 
 export const AgentsViewLoading = () => {
