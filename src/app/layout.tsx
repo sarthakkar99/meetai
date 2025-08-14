@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 import { TRPCReactProvider } from "@/trpc/client";
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +28,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased`}
       >
+        {/* The below is a component not a wrap around this is a component for error in agent-form*/}
+        <Toaster />
         {children}
       </body>
     </html>
